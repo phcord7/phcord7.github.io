@@ -1,0 +1,184 @@
+html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Georgia, serif;
+
+  background: #17121d;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.tela {
+  background: #241b2b;
+
+  border: 1px solid #6e527e;
+  border-radius: 24px;
+
+  padding: 30px 22px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 40px #0008;
+}
+
+.escondido {
+  display: none !important;
+}
+
+.logo,
+.trofeu {
+  font-size: 60px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+p {
+  color: #cdbbd5;
+}
+
+input {
+  width: 100%;
+
+  padding: 15px;
+
+  margin: 25px 0 15px;
+
+  border: 1px solid #765c84;
+  border-radius: 12px;
+
+  background: #17121d;
+  color: white;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+button {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #9b6bb3;
+  color: white;
+
+  font-weight: bold;
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+
+  color: #d9c5e3;
+}
+
+.barra {
+  width: 100%;
+  height: 8px;
+
+  background: #100d14;
+
+  border-radius: 10px;
+
+  margin-bottom: 25px;
+
+  overflow: hidden;
+}
+
+#progresso {
+  width: 5%;
+  height: 100%;
+
+  background: #b77bd1;
+
+  transition: .3s;
+}
+
+h2 {
+  font-size: 21px;
+  line-height: 1.4;
+
+  margin-bottom: 25px;
+}
+
+.opcao {
+  width: 100%;
+
+  padding: 15px;
+
+  margin: 10px 0;
+
+  border: 1px solid #765c84;
+  border-radius: 12px;
+
+  background: #30243a;
+  color: white;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.opcao:hover {
+  background: #453252;
+}
+
+.correta {
+  background: #286b48 !important;
+}
+
+.errada {
+  background: #813c49 !important;
+}
+
+#proxima {
+  margin-top: 15px;
+}
+
+.placar {
+  margin: 25px 0;
+}
+
+.placar strong {
+  display: block;
+
+  font-size: 55px;
+}
+
+.placar span {
+  color: #cdbbd5;
+}

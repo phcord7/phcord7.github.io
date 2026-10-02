@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<div class="app">
+
+  <div id="inicio" class="tela">
+    <div class="logo">📚</div>
+
+    <h1>Quiz Literário</h1>
+
+    <p>Naturalismo • Humanismo • Parnasianismo</p>
+
+    <input
+      id="nome"
+      type="text"
+      placeholder="Digite seu apelido"
+    >
+
+    <button onclick="iniciarQuiz()">
+      COMEÇAR QUIZ
+    </button>
+  </div>
+
+
+  <div id="quiz" class="tela escondido">
+
+    <div class="topo">
+      <span id="numero">Pergunta 1/20</span>
+      <span id="pontos">⭐ 0</span>
+    </div>
+
+    <div class="barra">
+      <div id="progresso"></div>
+    </div>
+
+    <h2 id="pergunta"></h2>
+
+    <div id="opcoes"></div>
+
+    <button
+      id="proxima"
+      class="escondido"
+      onclick="proximaPergunta()"
+    >
+      PRÓXIMA
+    </button>
+
+  </div>
+
+
+  <div id="resultado" class="tela escondido">
+
+    <div class="trofeu">🏆</div>
+
+    <h1>Quiz finalizado!</h1>
+
+    <p id="mensagem"></p>
+
+    <div class="placar">
+      <strong id="pontuacao">0/20</strong>
+      <span>pontos</span>
+    </div>
+
+    <button onclick="location.reload()">
+      JOGAR NOVAMENTE
+    </button>
+
+  </div>
+
+</div>
